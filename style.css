@@ -1,0 +1,175 @@
+@import url(https://fonts.google.com/specimen/Commissioner);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Commissioner", sans-serif;
+  background: navy;
+  /* z-index: 0; */
+}
+.hidden {
+  display: none;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(1px);
+  z-index: 1;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  padding-left: 20px;
+  transition: all 0.4s ease;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.logo a:hover {
+  opacity: 80%;
+}
+
+.nav-bar {
+  background: rgb(2, 2, 43);
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  gap: 20px;
+}
+
+.nav-items a {
+  list-style-type: none;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  transition: all 0.4s ease;
+  font-size: 18px;
+  /* justify-content: space-between; */
+}
+.nav-items a:last-child {
+  margin-right: 50px;
+}
+.nav-items a:hover {
+  opacity: 80%;
+  text-decoration: dotted;
+}
+
+.icon,
+.icon-logo {
+  width: 45px;
+  height: 45px;
+  color: red;
+}
+
+.icon-logo {
+  color: #fff;
+  width: 35px;
+  height: 35px;
+}
+.icon-box {
+  padding: 10px 20px;
+  background: none;
+  border: none;
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .nav-items a,
+  .logo a {
+    font-size: 15px;
+  }
+
+  .nav-items a {
+    text-decoration: underline;
+  }
+}
+
+@media (max-width: 700px) {
+  .nav-items {
+    position: fixed;
+    top: 15%;
+    background: rgb(129, 5, 5);
+    right: 5%;
+    flex-direction: column;
+    align-items: center;
+    /* text-align: left; */
+    padding: 10px 0;
+    width: 50vw;
+    height: 40vh;
+    right: -100%;
+    border-radius: 10px;
+    z-index: 2;
+    transition: all 0.4s ease-in-out;
+  }
+  .nav-bar {
+    z-index: 2;
+  }
+  .nav-items li {
+    border-bottom: 1px solid grey;
+    width: 100%;
+    padding: 10px;
+  }
+  .nav-items li:last-child {
+    border-bottom: none;
+  }
+  .nav-items a {
+    text-decoration: none;
+    align-items: center;
+  }
+  .nav-items a:hover {
+    color: blue;
+    transform: translateX(-50%);
+  }
+  .icon-box {
+    display: block;
+  }
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+  .close {
+    display: none;
+  }
+  .logo a {
+    font-size: 20px;
+    /* color: rgb(129, 5, 5); */
+  }
+  .nav-items.active {
+    right: 0;
+  }
+  .close.active {
+    display: block;
+  }
+  .open.active {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .nav-items {
+    height: 35vh;
+    top: 15%;
+  }
+}
