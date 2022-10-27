@@ -41,6 +41,7 @@ body {
 
 .logo a:hover {
   opacity: 80%;
+  transform: rotate(360deg);
 }
 
 .nav-bar {
@@ -115,20 +116,24 @@ body {
     flex-direction: column;
     align-items: center;
     /* text-align: left; */
-    padding: 10px 0;
+    padding: 10px;
     width: 50vw;
     height: 40vh;
     right: -100%;
     border-radius: 10px;
     z-index: 2;
+    text-align: center;
     transition: all 0.4s ease-in-out;
   }
   .nav-bar {
     z-index: 2;
   }
   .nav-items li {
-    border-bottom: 1px solid grey;
+    /* border-bottom: 1px solid grey; */
     width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
     padding: 10px;
   }
   .nav-items li:last-child {
@@ -137,13 +142,26 @@ body {
   .nav-items a {
     text-decoration: none;
     align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin-right: 0;
+    justify-content: center;
   }
-  .nav-items a:hover {
-    color: blue;
-    transform: translateX(-50%);
+  .nav-items a:last-child {
+    margin-right: 0;
+  }
+  .nav-items a:hover,
+  .nav-items a:focus {
+    opacity: 80%;
+    transform: rotate(360deg);
+    transition: all 0.4s ease;
   }
   .icon-box {
     display: block;
+  }
+  .open:hover,
+  .open:focus {
+    transform: rotate(360deg);
   }
   .icon {
     width: 40px;
@@ -154,7 +172,11 @@ body {
   }
   .logo a {
     font-size: 20px;
+
     /* color: rgb(129, 5, 5); */
+  }
+  .logo a:hover {
+    transform: rotate(360deg);
   }
   .nav-items.active {
     right: 0;
