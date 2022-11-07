@@ -95,6 +95,44 @@ body {
   border: none;
   display: none;
 }
+.audio {
+  align-items: center;
+  width: 55%;
+}
+.audio-box {
+  width: 500px;
+  margin: 100px auto;
+  gap: 20px;
+  flex-direction: column;
+  display: flex;
+  margin-bottom: 40px;
+  align-items: center;
+}
+.audio-box li,
+.video-box li {
+  color: #fff;
+  font-size: 20px;
+  list-style-type: none;
+  align-items: center;
+  /* margin-bottom: 20px; */
+}
+
+.video-box li {
+  margin-bottom: 10px;
+  align-items: center;
+  align-self: center;
+  text-align: center;
+}
+
+.video-box {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.vid {
+  width: 300px;
+  margin: 0 auto;
+}
 
 @media (max-width: 900px) {
   .nav-items a,
