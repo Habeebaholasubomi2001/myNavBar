@@ -156,7 +156,7 @@ body {
     /* text-align: left; */
     padding: 10px;
     width: 50vw;
-    height: 40vh;
+    height: 50vh;
     right: -100%;
     border-radius: 10px;
     z-index: 2;
@@ -243,7 +243,7 @@ body {
 
 @media (max-width: 400px) {
   .nav-items {
-    height: 35vh;
+    height: 50vh;
     top: 10%;
   }
   .audio-box {
