@@ -148,7 +148,7 @@ body {
 @media (max-width: 700px) {
   .nav-items {
     position: fixed;
-    top: 15%;
+    top: 12%;
     background: rgb(129, 5, 5);
     right: 5%;
     flex-direction: column;
@@ -245,5 +245,11 @@ body {
   .nav-items {
     height: 30vh;
     top: 10%;
+  }
+  .audio-box {
+    width: 300px;
+  }
+  .audio {
+    width: 80%;
   }
 }
