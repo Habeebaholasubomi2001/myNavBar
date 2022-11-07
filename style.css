@@ -100,7 +100,7 @@ body {
   width: 55%;
 }
 .audio-box {
-  width: 500px;
+  width: 350px;
   margin: 100px auto;
   gap: 20px;
   flex-direction: column;
